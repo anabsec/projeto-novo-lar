@@ -21,3 +21,28 @@ html/index.html#/inicio, #/projetos e #/cadastro. Sufixos como #/projetos/doacoe
 
 ## Dados e limites
 localStorage guarda somente favoritos. Cadastro é demonstrativo: valida dados fictícios, abre modal e não envia nem persiste dados pessoais. CPF valida formato, não dígitos verificadores. Não há backend. Canais de contato reais continuam pendentes. Esta versão separada mantém intacta a entrega HTML/CSS anterior. A avaliação pode exigir recursos adicionais nas próximas telas.
+## Versionamento e colaboração
+
+O projeto utiliza a organização de branches do GitFlow:
+
+- main: versão estável destinada à publicação.
+- develop: integração das alterações em desenvolvimento.
+- feature/*: desenvolvimento de funcionalidades e documentação.
+- release/*: preparação de uma nova versão.
+- hotfix/*: correções urgentes na versão publicada.
+
+As alterações devem partir de uma branch específica e ser encaminhadas por pull request. Antes da integração, devem ser revisados os arquivos modificados e testadas as funcionalidades afetadas.
+
+## Padrão de commits
+
+As mensagens indicam o propósito de cada alteração:
+
+- feat: adiciona uma funcionalidade.
+- fix: corrige um problema.
+- docs: atualiza a documentação.
+- style: ajusta a formatação do código.
+- chore: realiza tarefas de organização e manutenção.
+
+## Manutenção
+
+Os estilos ficam em css, a estrutura da página em html, as imagens em imagens e as funcionalidades em js. Após uma alteração, verificar a navegação, o formulário, os favoritos, a apresentação em celulares e as mensagens de erro no console.
